@@ -1,0 +1,153 @@
+@media (min-width: 768px) {
+  .main-container {
+    height: 90vh;
+    width: 85vw;
+    padding: 10px;
+  }
+  .home-container {
+    display: flex;
+  }
+  .home-movie-container {
+    width: 90%;
+    padding: 10px;
+  }
+  .failure-img {
+    height: 300px;
+  }
+  .failure-container {
+    min-height: 60vh;
+  }
+  .movie-list-view {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin-left: -40px;
+  }
+  .no-results-container {
+    height: 50vh;
+  }
+  .no-results {
+    height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .movie-list-view {
+    margin-left: -40px;
+  }
+  .large-sidebar {
+    display: none;
+  }
+  .main-container {
+    padding: 10px;
+  }
+  .home-movie-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .failure-img {
+    height: 200px;
+  }
+  .failure-container {
+    min-height: 70vh;
+  }
+  .no-results {
+    width: 100%;
+  }
+}
+.banner-container {
+  padding: 10px;
+  font-family: 'Roboto';
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+}
+.banner-img {
+  height: 30px;
+}
+.banner-close-btn {
+  background-color: transparent;
+  border-radius: 8px;
+  outline: none;
+  border: 0px;
+  height: 30px;
+}
+
+.get-btn {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 9px;
+  border: 2px solid #94a3b8;
+  color: #313131;
+  margin-top: 20px;
+}
+.banner-close-icon {
+  height: 30px;
+  width: 30px;
+}
+.banner-text {
+  color: #313131;
+  font-size: 16px;
+}
+.loader-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.retry-btn {
+  outline: none;
+  padding: 10px;
+  border: 0px;
+  cursor: pointer;
+  background-color: #00306e;
+  color: white;
+  border-radius: 7px;
+  width: 100px;
+}
+.retry-btn:hover {
+  box-shadow: 0px 0px 10px 0.1px antiquewhite;
+}
+.searchInput {
+  width: fit-content;
+  padding-right: 5px;
+  border: 1px solid #909090;
+  border-radius: 9px;
+}
+.search-input {
+  outline: none;
+  border: none;
+}
+.search-btn {
+  background-color: transparent;
+  outline: none;
+  border: 0px;
+}
+.dark-btn {
+  color: #909090;
+}
+.light-btn {
+  color: #313131;
+}
+.no-results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-results-btn {
+  background-color: #00306e;
+  outline: none;
+  border: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 100px;
+}

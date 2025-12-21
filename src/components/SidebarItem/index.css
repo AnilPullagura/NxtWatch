@@ -1,0 +1,20 @@
+.active {
+  color: #74abf3;
+}
+.link {
+  text-decoration: none;
+}
+.side-bar-item {
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  border: 0px;
+}
+@media (min-width: 768px) {
+  .side-bar-item {
+    justify-content: flex-start;
+  }
+}

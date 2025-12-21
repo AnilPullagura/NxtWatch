@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  .nav-div {
+    height: 90vh;
+    width: 15vw;
+  }
+}
+@media (max-width: 767px) {
+  .nav-div {
+    height: 80vh;
+  }
+}
+.sidebar-list {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.nav-div {
+  padding: 10px;
+  display: flex;
+  font-family: 'Roboto';
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-list {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  margin-left: -40px;
+}
+.contact-img {
+  height: 40px;
+}

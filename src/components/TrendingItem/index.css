@@ -1,0 +1,31 @@
+.trending-item-link {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .trending-list-item {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  .trending-list-img {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .trending-list-item {
+    padding: 10px;
+  }
+  .trending-list-img {
+    width: 100%;
+  }
+}
+.trending-name {
+  color: #909090;
+}
+.trending-date {
+  color: #909090;
+}
+.trending-title {
+  font-size: 20px;
+}

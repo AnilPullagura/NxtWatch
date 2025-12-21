@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .saved-item-link {
+    text-decoration: none;
+  }
+  .saved-list-img {
+    width: 100%;
+  }
+  .saved-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .saved-item-link {
+    text-decoration: none;
+    margin: 10px;
+  }
+  .saved-title {
+    font-size: 20px;
+  }
+  .saved-list-img {
+    width: 50%;
+  }
+  .video-list-item {
+    display: flex;
+    gap: 10px;
+  }
+}
+.saved-name {
+  color: #909090;
+}

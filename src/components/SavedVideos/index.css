@@ -1,0 +1,59 @@
+@media (max-width: 767px) {
+  .mobile-Sidebar {
+    display: none;
+  }
+  .no-videos-img {
+    height: 150px;
+  }
+  .videos-view-container {
+    min-height: 90vh;
+  }
+  .saved-list {
+    list-style-type: none;
+    margin-left: -40px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .videos-view-container {
+    width: 85vw;
+    height: 90vh;
+    padding: 10px;
+  }
+  .no-videos-img {
+    height: 350px;
+  }
+  .saved-videos-container {
+    display: flex;
+  }
+  .saved-list {
+    height: 82vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    width: 90%;
+    margin: auto;
+    list-style-type: none;
+    margin-left: -40px;
+  }
+}
+.no-videos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.saved-videos-head {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  gap: 10px;
+  padding: 10px;
+}
+.game-pad {
+  height: 40px;
+  width: 40px;
+}
+.head {
+  font-size: 20px;
+}
