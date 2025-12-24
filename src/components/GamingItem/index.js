@@ -20,7 +20,7 @@ const GameItem = props => {
                   alt="video thumbnail"
                 />
                 <div className="gaming-bottom">
-                  <h1 className="gaming-title">{title}</h1>
+                  <p className="gaming-title">{title}</p>
                   <Views isDarkTheme={isDarkTheme}>
                     {viewCount} Watching Worlwide
                   </Views>

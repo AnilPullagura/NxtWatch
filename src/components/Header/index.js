@@ -3,9 +3,6 @@ import {withRouter, Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Popup from 'reactjs-popup'
 import 'reactjs-popup/dist/index.css'
-import {IoIosMoon, IoMdClose, IoMdSunny} from 'react-icons/io'
-import {FiLogOut} from 'react-icons/fi'
-import {RxHamburgerMenu} from 'react-icons/rx'
 
 import {HeaderContainer, SideBarDiv} from './styledComponents'
 import Sidebar from '../Sidebar'
@@ -42,7 +39,7 @@ class Header extends Component {
           type="button"
           onClick={this.openSidebar}
         >
-          <RxHamburgerMenu className={thmeClassForBurgerIcon} />
+          <p className={thmeClassForBurgerIcon}>Menu </p>
         </button>
         <SideBarDiv
           isDarkTheme={isDarkTheme}
@@ -53,7 +50,7 @@ class Header extends Component {
             type="button"
             onClick={this.closeSidebar}
           >
-            <IoMdClose className={`${thmeClassForBurgerIcon} close-icon `} />
+            close
           </button>
           <Sidebar />
         </SideBarDiv>
@@ -66,19 +63,22 @@ class Header extends Component {
     const themeClassForlogoutBtn = isDarkTheme ? 'dark' : 'light'
     const themeClassForlogoutIcon = isDarkTheme ? 'dark-theme' : 'light-theme'
     const themeMoonIcon = isDarkTheme ? (
-      <button className="theme-btn" type="button">
-        <IoMdSunny
-          data-testid="theme"
-          className={`icons ${themeClassForIcons}`}
-          onClick={() => setDarkTheme()}
-        />
+      <button
+        onClick={() => setDarkTheme()}
+        data-testid="theme"
+        className="theme-btn"
+        type="button"
+      >
+        sun theme
       </button>
     ) : (
-      <button className="theme-btn" type="button" data-testid="theme">
-        <IoIosMoon
-          className={`icons ${themeClassForIcons}`}
-          onClick={() => setDarkTheme()}
-        />
+      <button
+        onClick={() => setDarkTheme()}
+        className="theme-btn"
+        type="button"
+        data-testid="theme"
+      >
+        moon Theme
       </button>
     )
     return (
@@ -93,11 +93,12 @@ class Header extends Component {
         </li>
         {this.renderMobileViewRoutes(isDarkTheme)}
         <li>
-          <button className="mobile-logout-icon" type="button">
-            <FiLogOut
-              onClick={this.logout}
-              className={`log-out-icon ${themeClassForlogoutIcon}`}
-            />
+          <button
+            onClick={this.logout}
+            className="mobile-logout-icon"
+            type="button"
+          >
+            logout
           </button>
           <button
             onClick={this.logout}
@@ -125,7 +126,11 @@ class Header extends Component {
               className="header-container"
             >
               <Link to="/">
-                <img className="logo-img" src={logoThemeImg} alt="logo" />
+                <img
+                  className="logo-img"
+                  src={logoThemeImg}
+                  alt="website logo"
+                />
               </Link>
               {this.renderNavelements(isDarkTheme, setDarkTheme)}
             </HeaderContainer>

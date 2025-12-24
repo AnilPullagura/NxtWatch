@@ -3,8 +3,7 @@ import {useState, useEffect, useContext} from 'react'
 import {formatDistanceToNow} from 'date-fns'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-import {BiLike, BiDislike} from 'react-icons/bi'
-import {FaSlidersH} from 'react-icons/fa'
+
 import ThemeContext from '../Context'
 import LikeItem from './LikeItem'
 import Header from '../Header'
@@ -22,12 +21,12 @@ const apiConstants = {
 const actionList = [
   {
     id: 1,
-    icon: <BiLike />,
+    icon: 'l',
     text: 'Like',
   },
   {
     id: 2,
-    icon: <BiDislike />,
+    icon: 'dl',
     text: 'Dislike',
   },
 ]
@@ -158,7 +157,6 @@ const VideoItemDetails = props => {
             className={` ${activeClassName} like-btn`}
             type="button"
           >
-            <FaSlidersH className={activeClassName} />
             Save
           </button>
         </li>

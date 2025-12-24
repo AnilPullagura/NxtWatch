@@ -3,10 +3,18 @@ import {formatDistanceToNow} from 'date-fns'
 import ThemeContext from '../Context'
 import {SavedDiv} from './styledComponents'
 import './index.css'
+
 const SavedVideoItem = props => {
   const {details} = props
-  const {name, id, publishedAt, thumbnailUrl, title, videoUrl, viewCount} =
-    details
+  const {
+    name,
+    id,
+    publishedAt,
+    thumbnailUrl,
+    title,
+    videoUrl,
+    viewCount,
+  } = details
   const date = formatDistanceToNow(new Date(publishedAt))
   return (
     <ThemeContext.Consumer>

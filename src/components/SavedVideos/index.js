@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {FaGamepad} from 'react-icons/fa'
+
 import Header from '../Header'
 
 import SavedVideoItem from '../SavedVideoItem'
@@ -57,7 +57,6 @@ const SavedVideos = () => {
                 className="videos-view-container"
               >
                 <div className="saved-videos-head">
-                  <FaGamepad className="game-pad" />
                   <h1 className="head">Saved Videos</h1>
                 </div>
                 {savedVideos.length > 0 ? renderVideosList() : renderNovideos()}

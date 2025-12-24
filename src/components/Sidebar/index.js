@@ -1,8 +1,5 @@
 import {Component} from 'react'
 
-import {IoMdHome} from 'react-icons/io'
-import {FaFireAlt, FaGamepad, FaSlidersH} from 'react-icons/fa'
-
 import ThemeContext from '../Context'
 import {SidebarNavDiv} from './styledComponent'
 import SidebarItem from '../SidebarItem'
@@ -12,25 +9,25 @@ const sidebarNavList = [
   {
     id: 1,
     displayText: 'Home',
-    icon: <IoMdHome />,
+    icon: 'home',
     path: '/',
   },
   {
     id: 2,
     displayText: 'Trending',
-    icon: <FaFireAlt />,
+    icon: 'fire',
     path: '/trending',
   },
   {
     id: 3,
     displayText: 'Gaming',
-    icon: <FaGamepad />,
+    icon: 'gampad',
     path: '/gaming',
   },
   {
     id: 4,
     displayText: 'Saved Videos',
-    icon: <FaSlidersH />,
+    icon: 'playlist',
     path: '/saved-videos',
   },
 ]
@@ -61,7 +58,7 @@ class Sidebar extends Component {
                 ))}
               </ul>
               <div>
-                <p>Contact Us</p>
+                <p>CONTACT US</p>
                 <ul className="contact-list">
                   <li>
                     <img
@@ -81,7 +78,7 @@ class Sidebar extends Component {
                     <img
                       className="contact-img"
                       src="https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png"
-                      alt="linkedin logo"
+                      alt="linked in logo"
                     />
                   </li>
                 </ul>

@@ -1,8 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-import {IoMdClose} from 'react-icons/io'
-import {HiSearch} from 'react-icons/hi'
+
 import Sidebar from '../Sidebar'
 import Header from '../Header'
 import {HomeDiv, SearchBox, InputBox} from './styledComponents'
@@ -93,11 +92,11 @@ class Home extends Component {
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
               alt="nxt watch logo"
             />
-            <h1 className="banner-text">
-              By Nxt Watch Premium Prepaid Plans With UPI
-            </h1>
+            <p className="banner-text">
+              Buy Nxt Watch Premium Prepaid Plans With UPI
+            </p>
             <button className="get-btn" type="button">
-              Get It Now
+              GET IT NOW
             </button>
           </div>
           <button
@@ -106,7 +105,7 @@ class Home extends Component {
             type="button"
             data-testid="close"
           >
-            <IoMdClose className="banner-close-icon" />
+            close
           </button>
         </div>
       )
@@ -143,7 +142,11 @@ class Home extends Component {
 
         return (
           <div className="failure-container">
-            <img className="failure-img" src={themeFailureImg} alt="failure" />
+            <img
+              className="failure-img"
+              src={themeFailureImg}
+              alt="failure view"
+            />
             <h1>Oops! Something Went Wrong</h1>
             <p>
               We are having some trouble to complete your request. Please try
@@ -185,7 +188,7 @@ class Home extends Component {
                   data-testid="searchButton"
                   type="button"
                 >
-                  <HiSearch className={btnclass} />
+                  search
                 </button>
               </SearchBox>
               {moiveList.length > 0 ? (
@@ -202,7 +205,7 @@ class Home extends Component {
                     alt="no videos"
                   />
                   <h1>No Search Results Found</h1>
-                  <p>Try different key words or remove search filer</p>
+                  <p>Try different key words or remove search filter</p>
                   <button
                     type="button"
                     className="no-results-btn"

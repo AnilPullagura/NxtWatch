@@ -41,7 +41,7 @@ const MovieItem = props => {
                     <img
                       className="channel-logo"
                       src={profileImageUrl}
-                      alt="logo"
+                      alt="channel logo"
                     />
                   </div>
                   <div>
