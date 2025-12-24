@@ -1,9 +1,10 @@
 import {useEffect, useState} from 'react'
 
 import Cookies from 'js-cookie'
-
+import {FaFireAlt} from 'react-icons/fa'
 import Loader from 'react-loader-spinner'
 import TrendingItem from '../TrendingItem'
+
 import Header from '../Header'
 import Sidebar from '../Sidebar'
 import ThemeContext from '../Context'
@@ -148,6 +149,7 @@ const Trending = () => {
                 className="trending-videos-container"
               >
                 <div className="trending-header">
+                  <FaFireAlt className="trending-img" />
                   <h1>Trending</h1>
                 </div>
                 {renderUI()}

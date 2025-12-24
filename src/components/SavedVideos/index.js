@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-
+import {MdOutlinePlaylistAdd} from 'react-icons/md'
 import Header from '../Header'
 
 import SavedVideoItem from '../SavedVideoItem'
@@ -57,6 +57,7 @@ const SavedVideos = () => {
                 className="videos-view-container"
               >
                 <div className="saved-videos-head">
+                  <MdOutlinePlaylistAdd />
                   <h1 className="head">Saved Videos</h1>
                 </div>
                 {savedVideos.length > 0 ? renderVideosList() : renderNovideos()}

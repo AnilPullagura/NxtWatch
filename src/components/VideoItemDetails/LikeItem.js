@@ -15,7 +15,7 @@ const LikeItem = props => {
         const {isDatkTheme} = value
         return (
           <li>
-            <button className=" like-btn" type="button" onClick={changeClick}>
+            <button className="like-btn" type="button" onClick={changeClick}>
               <p className={` ${activeClassName} `}>{text}</p>
               <div className={`${activeClassName} `}>{icon}</div>
             </button>

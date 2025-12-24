@@ -1,5 +1,7 @@
 import {Component} from 'react'
-
+import {AiFillHome} from 'react-icons/ai'
+import {FaFireAlt, FaGamepad} from 'react-icons/fa'
+import {MdOutlinePlaylistAdd} from 'react-icons/md'
 import ThemeContext from '../Context'
 import {SidebarNavDiv} from './styledComponent'
 import SidebarItem from '../SidebarItem'
@@ -9,25 +11,25 @@ const sidebarNavList = [
   {
     id: 1,
     displayText: 'Home',
-    icon: 'home',
+    icon: <AiFillHome />,
     path: '/',
   },
   {
     id: 2,
     displayText: 'Trending',
-    icon: 'fire',
+    icon: <FaFireAlt />,
     path: '/trending',
   },
   {
     id: 3,
     displayText: 'Gaming',
-    icon: 'gampad',
+    icon: <FaGamepad />,
     path: '/gaming',
   },
   {
     id: 4,
     displayText: 'Saved Videos',
-    icon: 'playlist',
+    icon: <MdOutlinePlaylistAdd />,
     path: '/saved-videos',
   },
 ]

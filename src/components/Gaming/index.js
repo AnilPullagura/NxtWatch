@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
-
+import {FaFireAlt, FaGamepad} from 'react-icons/fa'
 import ThemeContext from '../Context'
 import Header from '../Header'
 import Sidebar from '../Sidebar'
@@ -140,6 +140,7 @@ const Gaming = () => {
                 isDarkTheme={isDarkTheme}
               >
                 <div className="gaming-icon-top">
+                  <FaGamepad className="gaming-view-icon" />
                   <h1>Gaming</h1>
                 </div>
                 {renderUI()}

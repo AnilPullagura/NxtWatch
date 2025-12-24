@@ -1,8 +1,10 @@
 import {Component} from 'react'
 import {withRouter, Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
-import Popup from 'reactjs-popup'
+import {MdOutlineMenu} from 'react-icons/md'
 import 'reactjs-popup/dist/index.css'
+import {LuLogOut} from 'react-icons/lu'
+import {IoMdClose, IoIosMoon, IoMdSunny} from 'react-icons/io'
 
 import {HeaderContainer, SideBarDiv} from './styledComponents'
 import Sidebar from '../Sidebar'
@@ -39,7 +41,7 @@ class Header extends Component {
           type="button"
           onClick={this.openSidebar}
         >
-          <p className={thmeClassForBurgerIcon}>Menu </p>
+          <MdOutlineMenu className={thmeClassForBurgerIcon} />
         </button>
         <SideBarDiv
           isDarkTheme={isDarkTheme}
@@ -50,7 +52,7 @@ class Header extends Component {
             type="button"
             onClick={this.closeSidebar}
           >
-            close
+            <IoMdClose className={thmeClassForBurgerIcon} />
           </button>
           <Sidebar />
         </SideBarDiv>
@@ -69,7 +71,7 @@ class Header extends Component {
         className="theme-btn"
         type="button"
       >
-        sun theme
+        <IoMdSunny className={`icons ${themeClassForIcons}`} />
       </button>
     ) : (
       <button
@@ -78,7 +80,7 @@ class Header extends Component {
         type="button"
         data-testid="theme"
       >
-        moon Theme
+        <IoIosMoon className={`icons ${themeClassForIcons}`} />
       </button>
     )
     return (
@@ -98,7 +100,7 @@ class Header extends Component {
             className="mobile-logout-icon"
             type="button"
           >
-            logout
+            <LuLogOut className={themeClassForlogoutIcon} />
           </button>
           <button
             onClick={this.logout}
